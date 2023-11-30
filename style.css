@@ -1,0 +1,369 @@
+@font-face{
+    font-family: myFont;
+    src: url(Bold.otf);
+}
+
+@font-face{
+    font-family: myFont1;
+    src: url(Medium.otf);
+}
+
+@font-face{
+    font-family: myFont2;
+    src: url(Regular.otf);
+}
+
+@font-face{
+    font-family: myFont3;
+    src: url(Light.otf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("images/bg1.jpg");
+    height: 95vh;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body {
+    background-color: black;
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+nav img {
+    width: 132px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.intro {
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 0;
+    font-family: myFont;
+}
+::placeholder{
+    color: white;
+    opacity: 0.7;
+    font-family: myFont3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.intro> :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    width: 1200px;
+}
+
+.intro> :nth-child(2) {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.intro> :nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: myFont3;
+}
+
+.intro> :nth-child(4) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: myFont3;
+}
+
+.separation {
+    height: 8px;
+    background-color: rgb(35, 35, 35);
+    position: relative;
+    z-index: 12;
+}
+
+.intro-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: myFont;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.main input {
+    padding: 15px 110px 15px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(247, 239, 239, 0.7);
+}
+
+.btn {
+    padding: 5px 22px;
+    font-family: myFont3;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-red-sn {
+    background-color: rgb(195, 16, 25);
+    color: white;
+    font-family: myFont3;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-red {
+    background-color: rgb(229, 9, 20);
+    font-family: myFont3;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 13px 27px 13px 27px;
+    border-radius: 8px;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    width: 369px;
+    top: 60px;
+    right: 0;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    font-family: myFont;
+    padding:34px 0;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-family: myfont3;
+}
+
+.secimg2 img {
+    width: 600px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg2 video {
+    position: relative;
+    width: 400px;
+    bottom: 400px;
+    left: 97px
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    font-family: myFont2;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 80px;
+    font-family: myFont;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox1 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+
+.faqbox2 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin: 8px auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+
+.faqbox3 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin: 8px auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+
+.faqbox4 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin: 8px auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+
+.faqbox5 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin: 8px auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+
+.faqbox6 {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 28px;
+    font-size: 24px;
+    margin: 8px auto;
+    max-width: 75vw;
+    justify-content: space-between;
+}
+.faqbox1:hover{
+    background-color: rgb(60, 60, 60);
+}
+.faqbox2:hover{
+    background-color: rgb(60, 60, 60);
+}
+.faqbox3:hover{
+    background-color: rgb(60, 60, 60);
+}
+.faqbox4:hover{
+    background-color: rgb(60, 60, 60);
+}
+.faqbox5:hover{
+    background-color: rgb(60, 60, 60);
+}
+.faqbox6:hover{
+    background-color: rgb(60, 60, 60);
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: myFont;
+}
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.question{
+    padding: 34px 0;
+}
+.last{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    font-family: myFont3;
+    margin-top: 50px;
+}
+.last:first-child{
+    font-size: 20px;
+}
+.last-buttons{
+    display: flex;
+    
+}
+.last-btn-red{
+    background-color: rgb(229, 9, 20);
+    font-family: myFont3;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 13px 27px 13px 27px;
+    border-radius: 8px;
+    color: white;
+}
